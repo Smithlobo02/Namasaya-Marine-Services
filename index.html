@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Namasaya Marine Services | Professional Ship Repair in Mumbai & India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Namasaya Marine Services offers professional ship repair, engine overhauling, fabrication, maintenance, and marine manpower across Indian ports and international locations. Available 24/7.">
+    <meta name="keywords" content="ship repair Mumbai, marine services India, engine overhauling, ship fabrication, marine manpower, riding teams, vessel repair, Namasaya Marine, Palghar, Virar">
+    <meta name="author" content="Namasaya Marine Services">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Mumbai, Maharashtra, India">
+
+    <!-- Open Graph (WhatsApp / Facebook previews) -->
+    <meta property="og:title" content="Namasaya Marine Services | Professional Ship Repair">
+    <meta property="og:description" content="Reliable ship repair, fabrication, marine manpower and riding teams across Indian ports. Available 24/7.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smithlobo02.github.io/Namasaya-Marine/">
+    <meta property="og:image" content="https://smithlobo02.github.io/Namasaya-Marine/images/namasaya_logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://smithlobo02.github.io/Namasaya-Marine/">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ── Original reveal animations (unchanged) ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+
+        /* ══════════════════════════════════
+           NEW SECTIONS — self-contained CSS
+        ══════════════════════════════════ */
+
+        /* Stats Bar */
+        .stats-bar {
+            background: #0a1628;
+            padding: 32px 20px;
+        }
+        .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .stat-item {
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+            padding: 12px 20px;
+            border-right: 1px solid rgba(255,255,255,0.1);
+        }
+        .stat-item:last-child { border-right: none; }
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #f9a825;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        /* Shafting Banner */
+        .shafting-banner {
+            background: linear-gradient(90deg, #c62828 0%, #b71c1c 100%);
+            padding: 44px 24px;
+            text-align: center;
+        }
+        .shafting-banner h2 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 800;
+            color: #fff;
+            margin: 0 0 12px;
+        }
+        .shafting-banner p {
+            color: rgba(255,255,255,0.88);
+            font-size: 1rem;
+            max-width: 680px;
+            margin: 0 auto 18px;
+            line-height: 1.65;
+        }
+        .shafting-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 14px;
+        }
+        .shafting-tag {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.35);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.87rem;
+        }
+
+        /* Why Choose Us */
+        .why-section {
+            background: linear-gradient(135deg, #0a1628 0%, #112240 60%, #1a3a6e 100%);
+            padding: 70px 20px;
+        }
+        .why-section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .why-section-header h2 {
+            font-size: clamp(1.7rem, 4vw, 2.4rem);
+            font-weight: 800;
+            color: #fff;
+            margin: 0 0 12px;
+        }
+        .why-underline {
+            width: 60px;
+            height: 4px;
+            background: #f9a825;
+            margin: 0 auto 12px;
+            border-radius: 2px;
+        }
+        .why-section-header p {
+            color: rgba(255,255,255,0.65);
+            font-size: 1rem;
+            margin: 0;
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .why-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.11);
+            border-radius: 12px;
+            padding: 30px 22px;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+        }
+        .why-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            border-color: #f9a825;
+        }
+        .why-icon {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .why-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #f9a825;
+            margin: 0 0 10px;
+        }
+        .why-card p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.72);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Strength & Commitment */
+        .strength-section {
+            background: #f4f6f9;
+            padding: 70px 20px;
+        }
+        .strength-section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .strength-section-header h2 {
+            font-size: clamp(1.7rem, 4vw, 2.4rem);
+            font-weight: 800;
+            color: #0a1628;
+            margin: 0 0 12px;
+        }
+        .blue-underline {
+            width: 60px;
+            height: 4px;
+            background: #1565c0;
+            margin: 0 auto 12px;
+            border-radius: 2px;
+        }
+        .strength-section-header p {
+            color: #6b7280;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .strength-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .strength-box {
+            background: #fff;
+            border-radius: 14px;
+            padding: 32px 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+            border-top: 4px solid #1565c0;
+        }
+        .strength-box.commitment-box { border-top-color: #c62828; }
+        .strength-box h3 {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #0a1628;
+            margin: 0 0 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .box-icon { font-size: 1.5rem; }
+        .strength-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .strength-list li {
+            font-size: 0.92rem;
+            color: #4a5568;
+            padding: 9px 0 9px 24px;
+            border-bottom: 1px solid #eef0f4;
+            position: relative;
+            line-height: 1.55;
+        }
+        .strength-list li:last-child { border-bottom: none; }
+        .strength-list li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #1565c0;
+            font-size: 0.8rem;
+            top: 10px;
+        }
+        .commitment-box .strength-list li::before { color: #c62828; }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 24px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 8px;
+        }
+        .whatsapp-tooltip {
+            background: #0a1628;
+            color: #fff;
+            padding: 5px 13px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(8px);
+            transition: opacity 0.3s, transform 0.3s;
+            pointer-events: none;
+        }
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .whatsapp-btn {
+            width: 56px;
+            height: 56px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 18px rgba(37,211,102,0.45);
+            text-decoration: none;
+            animation: wa-pulse 2.5s infinite;
+            transition: transform 0.25s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            animation: none;
+        }
+        .whatsapp-btn svg { width: 30px; height: 30px; fill: #fff; }
+        @keyframes wa-pulse {
+            0%,100% { box-shadow: 0 4px 18px rgba(37,211,102,0.45); }
+            50%      { box-shadow: 0 4px 30px rgba(37,211,102,0.75); }
+        }
+
+        /* Mobile Sticky Call Bar */
+        .sticky-call-bar {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            z-index: 9998;
+            background: #c62828;
+            box-shadow: 0 -2px 12px rgba(0,0,0,0.25);
+        }
+        .sticky-call-bar a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 14px 20px;
+            letter-spacing: 0.3px;
+        }
+
+        /* WhatsApp link inside contact */
+        .wa-contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: #25d366;
+            color: #fff !important;
+            padding: 11px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.97rem;
+            margin-top: 16px;
+            transition: background 0.2s ease;
+        }
+        .wa-contact-link:hover { background: #1ebe5c; }
+        .wa-contact-link svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
+
+        @media (max-width: 768px) {
+            .strength-grid { grid-template-columns: 1fr; }
+            .sticky-call-bar { display: block; }
+            body { padding-bottom: 54px; }
+            .whatsapp-float { bottom: 72px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR — original, unchanged -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/namasaya_logo.png" alt="Namasaya Marine Services Logo" class="logo-img">
+            NAMASAYA <span class="red-text">MARINE</span> <span class="white-text">SERVICES</span>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO — original, unchanged -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Complete Repair Solutions to the Marine Industry</h1>
+            <p>Ship Repair • Fabrication • Marine Manpower • Riding Teams</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Request a Quote</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Availability</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Vessels Served</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">All</div>
+                <div class="stat-label">Indian Ports</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">STCW</div>
+                <div class="stat-label">Certified Team</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ORIGINAL container with About + Services -->
+    <div class="container">
+
+        <section id="about" class="about-section reveal">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="underline"></div>
+            </div>
+            <p>
+                Based in Mumbai, <strong>Namasaya Marine Services</strong> provides reliable and professional ship repair services across Indian ports and international locations. Backed by qualified Service Engineers, Mechanics, and Certified Welders, we ensure the highest standards of workmanship and safety.
+            </p>
+            <p>Our team is available 24/7, all around the year, to minimize vessel downtime.</p>
+        </section>
+
+        <section id="services">
+            <div class="section-header reveal">
+                <h2>Our Specialized Services</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="service-grid">
+                <div class="service-card reveal delay-1">
+                    <h3>Engine Services</h3>
+                    <p>Main engine unit jobs and Diesel Aux Engine full overhauling, including crankshaft and engine block replacement.</p>
+                </div>
+                <div class="service-card reveal delay-2">
+                    <h3>Fabrication</h3>
+                    <p>All types of fabrication work, including pipeline and plate repair or replacement.</p>
+                </div>
+                <div class="service-card reveal delay-3">
+                    <h3>Maintenance</h3>
+                    <p>Tank cleaning (hydro blasting), chipping, painting, and overhauling of pumps, valves, and electric motors.</p>
+                </div>
+                <div class="service-card reveal delay-4">
+                    <h3>Manpower</h3>
+                    <p>Specialized riding teams for sealing jobs and qualified technicians with STCW courses and Indian seaman book.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- NEW: Shafting Specialty Banner -->
+    <div class="shafting-banner reveal">
+        <h2>&#9875; Shafting &amp; Alignment Specialists</h2>
+        <p>
+            Namasaya Marine Services is renowned for its <strong>unmatched shafting work</strong>. We have successfully completed crankshaft replacement, engine block assembly, precision alignment, and load testing on numerous vessels across Indian and international ports.
+        </p>
+        <div class="shafting-tags">
+            <span class="shafting-tag">Crankshaft Replacement</span>
+            <span class="shafting-tag">Engine Block Assembly</span>
+            <span class="shafting-tag">Precision Alignment</span>
+            <span class="shafting-tag">Load Testing</span>
+            <span class="shafting-tag">Main Engine Overhaul</span>
+            <span class="shafting-tag">Aux Engine Overhaul</span>
+        </div>
+    </div>
+
+    <!-- NEW: Why Choose Us -->
+    <section id="why-us" class="why-section">
+        <div class="why-section-header">
+            <h2>Why Choose Namasaya?</h2>
+            <div class="why-underline"></div>
+            <p>What sets us apart in the marine repair industry</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal delay-1">
+                <span class="why-icon">&#128336;</span>
+                <h3>24&times;7 Availability</h3>
+                <p>Our dedicated team is available round the clock, every day of the year — minimizing your vessel's downtime.</p>
+            </div>
+            <div class="why-card reveal delay-2">
+                <span class="why-icon">&#128295;</span>
+                <h3>Own Calibration Tools</h3>
+                <p>We carry our own precision calibration equipment on board, ensuring accurate measurements and quality outcomes every time.</p>
+            </div>
+            <div class="why-card reveal delay-3">
+                <span class="why-icon">&#9881;&#65039;</span>
+                <h3>Unmatched Shafting Work</h3>
+                <p>Renowned for shafting, alignment, and crankshaft replacement — our work sets the benchmark in the marine industry.</p>
+            </div>
+            <div class="why-card reveal delay-4">
+                <span class="why-icon">&#127885;</span>
+                <h3>STCW Certified Team</h3>
+                <p>All technicians hold valid STCW certifications and Indian CDC, ensuring full compliance and professional-grade work on board.</p>
+            </div>
+            <div class="why-card reveal delay-1">
+                <span class="why-icon">&#128674;</span>
+                <h3>Turnkey Repair Jobs</h3>
+                <p>We handle complete end-to-end repair projects on marine machinery and equipment — one team, full accountability.</p>
+            </div>
+            <div class="why-card reveal delay-2">
+                <span class="why-icon">&#128205;</span>
+                <h3>Pan-India Coverage</h3>
+                <p>We operate across all major Indian ports and also extend services to international locations as required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Strength & Commitment -->
+    <section class="strength-section">
+        <div class="strength-section-header reveal">
+            <h2>Our Strength &amp; Commitment</h2>
+            <div class="blue-underline"></div>
+            <p>Built on expertise, perfection, and customer trust</p>
+        </div>
+        <div class="strength-grid">
+            <div class="strength-box reveal-left">
+                <h3><span class="box-icon">&#128170;</span> Our Strength</h3>
+                <ul class="strength-list">
+                    <li>Known for quality workmanship in the marine industry</li>
+                    <li>Expertise in crankshaft &amp; engine block replacement with alignment and load testing</li>
+                    <li>Successful track record across shafting, main engine &amp; aux engine overhauls</li>
+                    <li>Full range of pump &amp; valve repairs completed on various vessels</li>
+                    <li>Own calibration tools available on board when required</li>
+                    <li>Economical solutions without compromising on quality or perfection</li>
+                    <li>Modern machinery with qualified operators for any repair challenge</li>
+                </ul>
+            </div>
+            <div class="strength-box commitment-box reveal-right">
+                <h3><span class="box-icon">&#129309;</span> Our Commitment</h3>
+                <ul class="strength-list">
+                    <li>Complete repair support with utmost importance to vessel owners</li>
+                    <li>All repairs completed within the shortest time frame with quality &amp; perfection</li>
+                    <li>Team available 24&times;7, 365 days a year</li>
+                    <li>All team members hold valid STCW courses &amp; Indian seaman book</li>
+                    <li>Manpower for fabrication, welding, fitting, tank cleaning &amp; blasting-chipping-painting on daily wages</li>
+                    <li>We value every customer and meet all demands within agreed timelines</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORIGINAL Gallery + Contact -->
+    <div class="container">
+
+        <section id="gallery">
+            <div class="section-header reveal">
+                <h2>Project Gallery</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="img-container reveal delay-1"><img src="images/ship1.jpg" alt="Ship Repair Work by Namasaya Marine Services" onclick="openImage(this.src)"></div>
+                <div class="img-container reveal delay-2"><img src="images/ship2.jpg" alt="Marine Engine Overhaul by Namasaya Marine" onclick="openImage(this.src)"></div>
+                <div class="img-container reveal delay-3"><img src="images/ship3.jpg" alt="Steel Fabrication Work by Namasaya Marine Services" onclick="openImage(this.src)"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info reveal-left">
+                    <h3>Get In Touch</h3>
+                    <p><strong>Address:</strong> 179, Appashreya, Morewadi-Angali, Nandakhal, Agashi, Palghar, Virar West-401301.</p>
+                    <p><strong>Contact:</strong> Mr. Rajesh Lobo (+91 7768862920) / Mr. Smith Lobo (+91 9665259087).</p>
+                    <p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&to=namasayamarine2@gmail.com" target="_blank" style="color: white;">namasayamarine2@gmail.com</a></p>
+                    <a class="wa-contact-link"
+                       href="https://wa.me/917768862920?text=Hello%20Namasaya%20Marine%20Services%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+                       target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                <form class="contact-form reveal-right">
+                    <input type="text" placeholder="Company Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Your Requirement" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ORIGINAL Footer -->
+    <footer>
+        <p>&copy; 2025 Namasaya Marine Services. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ORIGINAL Modal -->
+    <div id="imgModal" class="modal">
+        <span class="close-modal" onclick="closeImage()">&times;</span>
+        <img id="modalImg" src="">
+    </div>
+
+    <!-- NEW: WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <span class="whatsapp-tooltip">Chat with us!</span>
+        <a class="whatsapp-btn"
+           href="https://wa.me/917768862920?text=Hello%20Namasaya%20Marine%20Services%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+           target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+    </div>
+
+    <!-- NEW: Mobile Sticky Call Bar (shows only on mobile) -->
+    <div class="sticky-call-bar">
+        <a href="tel:+917768862920">
+            &#128222;&nbsp; Call Now &mdash; Mr. Rajesh Lobo
+        </a>
+    </div>
+
+    <!-- ORIGINAL Scripts -->
+    <script src="script.js"></script>
+    <script>
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
