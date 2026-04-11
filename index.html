@@ -585,11 +585,11 @@
                         Chat on WhatsApp
                     </a>
                 </div>
-                <form class="contact-form reveal-right">
-                    <input type="text" placeholder="Company Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Your Requirement" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                <form class="contact-form reveal-right" action="https://formspree.io/f/mqegrqqb" method="POST">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <textarea name="requirement" placeholder="Your Requirement" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
                 </form>
             </div>
         </section>
